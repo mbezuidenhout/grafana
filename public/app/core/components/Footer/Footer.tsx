@@ -14,29 +14,7 @@ export interface FooterLink {
 }
 
 export let getFooterLinks = (): FooterLink[] => {
-  return [
-    {
-      target: '_blank',
-      id: 'documentation',
-      text: t('nav.help/documentation', 'Documentation'),
-      icon: 'document-info',
-      url: 'https://grafana.com/docs/grafana/latest/?utm_source=grafana_footer',
-    },
-    {
-      target: '_blank',
-      id: 'support',
-      text: t('nav.help/support', 'Support'),
-      icon: 'question-circle',
-      url: 'https://grafana.com/products/enterprise/?utm_source=grafana_footer',
-    },
-    {
-      target: '_blank',
-      id: 'community',
-      text: t('nav.help/community', 'Community'),
-      icon: 'comments-alt',
-      url: 'https://community.grafana.com/?utm_source=grafana_footer',
-    },
-  ];
+  return [];
 };
 
 export function getVersionMeta(version: string) {
@@ -68,25 +46,6 @@ export let getVersionLinks = (): FooterLink[] => {
   const { hasReleaseNotes, isBeta } = getVersionMeta(buildInfo.version);
   const versionSlug = buildInfo.version.replace(/\./g, '-'); // replace all periods with hyphens
   const docsVersion = isBeta ? 'next' : 'latest';
-
-  links.push({
-    target: '_blank',
-    id: 'version',
-    text: `v${buildInfo.version} (${buildInfo.commit})`,
-    url: hasReleaseNotes
-      ? `https://grafana.com/docs/grafana/${docsVersion}/release-notes/release-notes-${versionSlug}/`
-      : undefined,
-  });
-
-  if (buildInfo.hasUpdate) {
-    links.push({
-      target: '_blank',
-      id: 'updateVersion',
-      text: `New version available!`,
-      icon: 'download-alt',
-      url: 'https://grafana.com/grafana/download?utm_source=grafana_footer',
-    });
-  }
 
   return links;
 };

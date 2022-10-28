@@ -6,6 +6,12 @@
 
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="main" style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; color: #222222; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; height: 100% !important; line-height: 19px; margin: 0 auto; min-width: 100%; padding: 0; text-align: left; width: 100% !important;" bgcolor="#2e2e2e"><style type="text/css">
+@font-face {
+font-family: 'Eurostile'; font-style: normal; font-weight: 400; src: local('Eurostile'), url('https://fonts.cdnfonts.com/s/13662/eurostile.woff') format('woff');
+}
+@font-face {
+font-family: 'EuroStyle'; font-style: normal; font-weight: 400; src: local('EuroStyle'), url('https://fonts.cdnfonts.com/s/13662/EuroStyle Normal.woff') format('woff');
+}
 body {
 width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
 }
@@ -77,6 +83,14 @@ border: 0 !important; outline: none !important; text-decoration: none !important
 }
 a:hover {
 text-decoration: underline;
+}
+h1.title {
+font-family:'Eurostile', Courier, monospace;
+color: #efefef;
+}
+h3.subtitle {
+font-family:'Eurostile', Courier, monospace;
+color: #999999;
 }
 @media only screen and (max-width: 600px) {
   table[class="body"] center {
@@ -191,7 +205,9 @@ text-decoration: underline;
 						            <table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;">
 						              <tr style="padding: 0; vertical-align: top;" align="left">
 						                <td class="six sub-columns center" style="-moz-hyphens: auto; -webkit-font-smoothing: antialiased; -webkit-hyphens: auto; -webkit-text-size-adjust: none; border-collapse: collapse !important; color: #222222; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; min-width: 0px; padding: 0px 10px 10px 0px; width: 50%; word-break: break-word;" align="center" valign="top">
-											<img class="logo" src="https://grafana.com/assets/img/logo_new_transparent_200x48.png" style="-ms-interpolation-mode: bicubic; border: 0; clear: both; display: inline; outline: none !important; text-decoration: none !important; width: 200px;" align="none" />
+                                            <img class="logo" src="https://my.senseconnect.co.za/public/img/senseconnect_icon.svg" style="width: 48px; height: 48px; float: none; display: inline">
+                                            <h1 class="title" style="margin-top:0;margin-bottom:0">sense connect</h1>
+                                            <h3 class="subtitle" style="margin-top:0;">the sensor company</h3>
 						                </td>
 										<td class="expander" style="-moz-hyphens: auto; -webkit-font-smoothing: antialiased; -webkit-hyphens: auto; -webkit-text-size-adjust: none; border-collapse: collapse !important; color: #222222; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; visibility: hidden; width: 0px; word-break: break-word;" align="left" valign="top"></td>
 						              </tr>
@@ -340,7 +356,7 @@ text-decoration: underline;
 										<td class="twelve" align="center" style="-moz-hyphens: auto; -webkit-font-smoothing: antialiased; -webkit-hyphens: auto; -webkit-text-size-adjust: none; border-collapse: collapse !important; color: #222222; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; width: 100%; word-break: break-word;" valign="top">
 											<center style="min-width: 580px; width: 100%;">
 												<p style="-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; color: #999999; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0;" align="center">
-													Sent by <a href="{{.AppUrl}}" style="color: #E67612; text-decoration: none;">Grafana v{{.BuildVersion}}</a>
+													Sent by <a href="{{.AppUrl}}" style="color: #E67612; text-decoration: none;">Grafana on SenseConnect v{{.BuildVersion}}</a>
 													<br />© 2016 Grafana and raintank
 												</p>
 											</center>
